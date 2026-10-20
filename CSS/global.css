@@ -90,13 +90,7 @@
 
 }
 
-.pagina__esquerda{
-   
-}
 
-.pagina__esquerda-titulo{
-
-}
 
 .pagina__plano{
     display: flex;
@@ -127,26 +121,42 @@
 .pagina__titulo{
     font-family: var(--font-title);
     color: var(--color-text-title);
-    display: ;
+    display: flex;
+    flex-direction: column;
 }
 
 .pagina__card{
     background-color: var(--color-bg-color); 
-    display: flexbox; 
+    display: flexbox;
+    box-sizing: border-box;
+    border-color: var(--color-border);
     
 }
 
-.subtitulo{
+.pagina__column{
+    
+
+    margin-bottom: 20;
+    padding: 0 5%;
+    scroll-margin-top: 80;
+    justify-content: space-around;
+    padding-top: 20;
+    scroll-margin-top: 79px;
+
+    height: calc(100vh - var(--header-height) - var(--footer-height));
+    min-height: 800px;
+    align-items: center;
+    scroll-margin-top: 10vh;
 }
-
-.pagina__plano{}
-
 .faq{
     width: 50%;
     border: 2px solid;
     margin-left: 25px;
     border-radius: 15px;
+    
 }
+
+
 
 .footer{
     position: fixed;
