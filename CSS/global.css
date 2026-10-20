@@ -4,6 +4,7 @@
 .body{
     padding-top: 80px;
     font-size: var();
+    color: --color-text-body;
 }
 
 .header{
@@ -82,11 +83,10 @@
     scroll-margin-top: 79px;
 
     height: calc(100vh - var(--header-height) - var(--footer-height));
-    min-height: 500px;
+    min-height: 800px;
     align-items: center;
-
-    border-bottom: 1px solid var(--color-border);
     scroll-margin-top: 10vh;
+
 }
 
 .pagina__esquerda{
@@ -103,11 +103,12 @@
     gap: 40px;
     width: 100%;
     max-width: 1200px;
+
 }
 
 .card__image{
-    height: 100vh;
-    width: 100vh;
+    height: 50vh;
+    width: 1000px;
     padding: 5px;
     border-radius: var(--radius-md);
     box-shadow: (--shadow-card);
@@ -116,18 +117,33 @@
 .pagina__titulo{
     font-family: var(--font-title);
     color: var(--color-text-title);
+    display: ;
 }
 
 .pagina__card{
-    background-color: v;
+    background-color: var();
 }
 
 .subtitulo{}
 
 .pagina__plano{}
 
-.faq{}
+.faq{
+    
+}
 
 .footer{
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--color-header-bg);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5%;
+    z-index: 1000;
+    backdrop-filter: blur(12px);
 }
