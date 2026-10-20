@@ -115,6 +115,15 @@
     box-shadow: (--shadow-card);
 }
 
+.card__image-section02{
+    height: 300px;
+    width: 100%;
+    padding: 5px;
+    border-radius: var(--radius-md);
+    box-shadow: (--shadow-card);
+}
+
+
 .pagina__titulo{
     font-family: var(--font-title);
     color: var(--color-text-title);
@@ -122,15 +131,21 @@
 }
 
 .pagina__card{
-    background-color: var();
+    background-color: var(--color-bg-color); 
+    display: flexbox; 
+    
 }
 
-.subtitulo{}
+.subtitulo{
+}
 
 .pagina__plano{}
 
 .faq{
-    
+    width: 50%;
+    border: 2px solid;
+    margin-left: 25px;
+    border-radius: 15px;
 }
 
 .footer{
