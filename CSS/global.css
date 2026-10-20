@@ -1,8 +1,12 @@
 @import url(./reset.css);
 @import url(./variables.css);
 
+.body{
+    padding-top: 80px;
+}
+
 .header{
-     position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -63,11 +67,13 @@
 .pagina{
     height: 100vh;
     display: flex;
-    align-items: left-center;
+    align-items: flex-start;
     margin-bottom: 20;
     padding: 0 5%;
     scroll-margin-top: var(--header-height);
     justify-content: space-around;
+    padding-top: 10;
+    scrroll
 }
 
 .pagina__esquerda{}
@@ -100,3 +106,7 @@
 .pagina__plano{}
 
 .faq{}
+
+.footer{
+    position: fixed;
+}
