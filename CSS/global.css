@@ -3,6 +3,7 @@
 
 .body{
     padding-top: 80px;
+    font-size: var();
 }
 
 .header{
@@ -32,7 +33,7 @@
 .header__title{
     font-size: var(--font-size-xl);
     color: var(--color-header-text);
-    font-weight: 700;
+    font-family: var(--font-title);
 
 }
 
@@ -61,7 +62,7 @@
 .nav__link:hover,
 .nav__link:focus {
     background-color: var(--color-primary);
-    color: var(--color-nav-link-hover);
+    color: var(--color-primary-hover);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
 }
@@ -72,22 +73,24 @@
 }
 
 .pagina{
-    min-height: 80;
-    height: 100vh;
     display: flex;
-    align-items: flex-start;
     margin-bottom: 20;
     padding: 0 5%;
     scroll-margin-top: 80;
     justify-content: space-around;
     padding-top: 10;
     scroll-margin-top: 79px;
+
+    height: calc(100vh - var(--header-height) - var(--footer-height));
+    min-height: 500px;
+    align-items: center;
+
+    border-bottom: 1px solid var(--color-border);
+    scroll-margin-top: 10vh;
 }
 
 .pagina__esquerda{
-    display: flex;
-    align-items: center;     
-    justify-content: center;
+   
 }
 
 .pagina__esquerda-titulo{
