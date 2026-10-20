@@ -3,8 +3,8 @@
 
 .body{
     padding-top: 80px;
-    font-size: var();
-    color: --color-text-body;
+    font-size: var(--font-size-base);
+    color: var(--font-size-lg);
 }
 
 .header{
@@ -21,6 +21,7 @@
     padding: 0 5%;
     z-index: 1000;
     backdrop-filter: blur(12px);
+
     
     
 }
@@ -107,8 +108,8 @@
 }
 
 .card__image{
-    height: 50vh;
-    width: 1000px;
+    height: 550px;
+    width: 100%;
     padding: 5px;
     border-radius: var(--radius-md);
     box-shadow: (--shadow-card);
@@ -134,16 +135,31 @@
 
 .footer{
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     background-color: var(--color-header-bg);
 
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+
+  
     padding: 0 5%;
     z-index: 1000;
     backdrop-filter: blur(12px);
+
+    display: flex;
+
+
+    font-size: var(--font-size-lg);
+    color: var(--color-secondary);
+    font-family: var(--font-title);
+}
+
+.footer__esquerda{
+      justify-content: start;
+}
+
+.footer__direita{
+    justify-content: end;
 }
